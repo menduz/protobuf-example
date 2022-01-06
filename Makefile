@@ -36,10 +36,10 @@ install: install_compiler
 	npm i -S @types/google-protobuf@latest
 
 test:
-	node_modules/.bin/jest --detectOpenHandles --colors --runInBand $(TESTARGS) --coverage
+	node_modules/.bin/jest --detectOpenHandles --colors --runInBand $(TESTARGS)
 
 test-watch:
-	node_modules/.bin/jest --detectOpenHandles --colors --runInBand --watch $(TESTARGS) --coverage
+	node_modules/.bin/jest --detectOpenHandles --colors --runInBand --watch $(TESTARGS)
 
 build:
 	@rm -rf dist || true
